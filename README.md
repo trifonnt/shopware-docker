@@ -7,6 +7,12 @@ Docker (min. Version 1.12) have to be installed on your local machine:
 
  - [Docker](https://docs.docker.com/engine/installation/linux/)
 
+PHP
+```shell
+$ sudo apt-get install php
+```
+
+
 ## Usage
 
 Clone the repository to your local machine.
