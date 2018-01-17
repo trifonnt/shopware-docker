@@ -55,6 +55,9 @@ services:
 
   app_activemq:
     image: trifonnt/alpine-activemq:5.15.2
+# Issue with folder permissions
+#    volumes:
+#      - ./dev-ops/docker/_volumes/app-activemq-data:/opt/activemq/data
     ports:
       - 8161:8161
       - 1883:1883
