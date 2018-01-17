@@ -53,6 +53,19 @@ services:
       sw_docker:
         ipv4_address: 10.100.111.49
 
+  app_activemq:
+    image: trifonnt/alpine-activemq:5.15.2
+    ports:
+      - 8161:8161
+      - 1883:1883
+      - 5672:5672
+      - 61613:61613
+      - 61614:61614
+      - 61616:61616
+    networks:
+      sw_docker:
+        ipv4_address: 10.100.111.50
+
 networks:
   sw_docker:
     driver: bridge
